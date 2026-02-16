@@ -1,8 +1,8 @@
 package oop_77820_RifqahAulia.week01
 
 fun main() {
-    var name: String = "Aulia"
-    var score: Int = 95
+    val name = "Aulia"
+    val score = 95
 
-    println("Nama: " + name + " Nilai: " + score)
+    println("Nama: $name, score: $score")
 }
