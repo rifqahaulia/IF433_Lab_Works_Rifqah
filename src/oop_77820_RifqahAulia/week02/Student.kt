@@ -1,22 +1,30 @@
 package oop_77820_RifqahAulia.week02
 
-class Student(
-    val nim: String,
-    var name: String,
-    var major: String
-) {
+import java.util.Scanner
 
-    init {
-        if (nim.length != 10) {
-            println("WARNING: NIM harus 10 digit!")
-        }
+fun main() {
 
-        if (name.isBlank()) {
-            println("WARNING: Nama tidak boleh kosong!")
-        }
+    val input = Scanner(System.`in`)
 
-        if (major.isBlank()) {
-            println("WARNING: Jurusan tidak boleh kosong!")
-        }
+    print("Masukkan NIM: ")
+    val nim = input.nextLine()
+
+    if (nim.length != 10) {
+        println("NIM tidak valid! Program dihentikan.")
+        return
     }
+
+    print("Masukkan Nama: ")
+    val name = input.nextLine()
+
+    print("Masukkan Jurusan: ")
+    val major = input.nextLine()
+
+    val student = Student(nim, name, major)
+
+    println("\nData Mahasiswa:")
+    println("NIM: ${student.nim}")
+    println("Nama: ${student.name}")
+    println("Jurusan: ${student.major}")
 }
+
