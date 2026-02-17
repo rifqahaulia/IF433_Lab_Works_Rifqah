@@ -3,8 +3,7 @@ package oop_77820_RifqahAulia.week02
 class Student(
     val nim: String,
     var name: String,
-    var major: String,
-    var gpa: Double = 0.0
+    var major: String
 ) {
 
     init {
@@ -20,6 +19,4 @@ class Student(
             println("WARNING: Jurusan tidak boleh kosong!")
         }
     }
-
-    constructor(nim: String, name: String) : this(nim, name, "Non-Matriculated")
 }
