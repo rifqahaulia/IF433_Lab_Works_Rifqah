@@ -6,24 +6,30 @@ fun main() {
 
     val input = Scanner(System.`in`)
 
+    println("=== Sistem Pendaftaran Mahasiswa ===")
+    println("1. Daftar dengan jurusan")
+    println("2. Daftar tanpa jurusan")
+    print("Pilih menu: ")
+    val choice = input.nextInt()
+    input.nextLine()
+
     print("Masukkan NIM: ")
     val nim = input.nextLine()
-
-    if (nim.length != 10) {
-        println("NIM tidak valid! Program dihentikan.")
-        return
-    }
 
     print("Masukkan Nama: ")
     val name = input.nextLine()
 
-    print("Masukkan Jurusan: ")
-    val major = input.nextLine()
-
-    val student = Student(nim, name, major)
+    val student = if (choice == 1) {
+        print("Masukkan Jurusan: ")
+        val major = input.nextLine()
+        Student(nim, name, major)
+    } else {
+        Student(nim, name)
+    }
 
     println("\nData Mahasiswa:")
     println("NIM: ${student.nim}")
     println("Nama: ${student.name}")
     println("Jurusan: ${student.major}")
+    println("IPK: ${student.gpa}")
 }
