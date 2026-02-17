@@ -33,6 +33,10 @@ fun main() {
     println("Jurusan: ${student.major}")
     println("IPK: ${student.gpa}")
 
+    // ======================================
+    // TASK 1 - LIBRARY SYSTEM
+    // ======================================
+
     println("\n=== Sistem Peminjaman Buku ===")
 
     print("Judul Buku: ")
@@ -45,7 +49,6 @@ fun main() {
     var duration = input.nextInt()
     input.nextLine()
 
-    // Validasi: tidak boleh minus
     if (duration < 0) {
         duration = 1
     }
@@ -57,4 +60,64 @@ fun main() {
     println("Peminjam: ${loan.borrower}")
     println("Durasi: ${loan.loanDuration} hari")
     println("Total Denda: Rp ${loan.calculateFine()}")
+
+    // ======================================
+    // TASK 2 - MINI RPG BATTLE (CHECKPOINT 10)
+    // ======================================
+
+    println("\n=== MINI RPG BATTLE ===")
+
+    print("Masukkan Nama Hero: ")
+    val heroName = input.nextLine()
+
+    print("Masukkan Base Damage Hero: ")
+    val damage = input.nextInt()
+    input.nextLine()
+
+    val hero = Hero(heroName, damage)
+    var enemyHp = 100
+
+    while (hero.isAlive() && enemyHp > 0) {
+
+        println("\n1. Serang")
+        println("2. Kabur")
+        print("Pilih aksi: ")
+        val action = input.nextInt()
+        input.nextLine()
+
+        if (action == 1) {
+
+            hero.attack("Enemy")
+
+            enemyHp -= hero.baseDamage
+            if (enemyHp < 0) {
+                enemyHp = 0
+            }
+
+            println("HP Enemy: $enemyHp")
+
+            if (enemyHp > 0) {
+                val enemyDamage = (10..20).random()
+                println("Enemy menyerang balik sebesar $enemyDamage!")
+                hero.takeDamage(enemyDamage)
+                println("HP Hero: ${hero.hp}")
+            }
+
+        } else if (action == 2) {
+            println("Kamu kabur dari pertarungan!")
+            break
+        } else {
+            println("Pilihan tidak valid!")
+        }
+    }
+
+    println("\n=== HASIL PERTARUNGAN ===")
+
+    if (hero.isAlive() && enemyHp == 0) {
+        println("${hero.name} MENANG!")
+    } else if (!hero.isAlive()) {
+        println("${hero.name} KALAH!")
+    } else {
+        println("Pertarungan dihentikan.")
+    }
 }
