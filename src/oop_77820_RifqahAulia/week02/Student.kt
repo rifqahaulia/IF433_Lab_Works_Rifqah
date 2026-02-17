@@ -1,30 +1,25 @@
-package oop_77820_RifqahAulia.week02
+package oop_<nim>_<nama>.week02
 
-import java.util.Scanner
+class Student(
+    val nim: String,
+    var name: String,
+    var major: String
+) {
 
-fun main() {
+    init {
+        if (nim.length != 10) {
+            println("WARNING: NIM harus 10 digit!")
+        }
 
-    val input = Scanner(System.`in`)
+        if (name.isBlank()) {
+            println("WARNING: Nama tidak boleh kosong!")
+        }
 
-    print("Masukkan NIM: ")
-    val nim = input.nextLine()
-
-    if (nim.length != 10) {
-        println("NIM tidak valid! Program dihentikan.")
-        return
+        if (major.isBlank()) {
+            println("WARNING: Jurusan tidak boleh kosong!")
+        }
     }
 
-    print("Masukkan Nama: ")
-    val name = input.nextLine()
-
-    print("Masukkan Jurusan: ")
-    val major = input.nextLine()
-
-    val student = Student(nim, name, major)
-
-    println("\nData Mahasiswa:")
-    println("NIM: ${student.nim}")
-    println("Nama: ${student.name}")
-    println("Jurusan: ${student.major}")
+    // Secondary Constructor
+    constructor(nim: String, name: String) : this(nim, name, "Non-Matriculated")
 }
-
