@@ -19,4 +19,7 @@ class Student(
             println("WARNING: Jurusan tidak boleh kosong!")
         }
     }
+
+    // Secondary Constructor
+    constructor(nim: String, name: String) : this(nim, name, "Non-Matriculated")
 }
