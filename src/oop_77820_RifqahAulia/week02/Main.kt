@@ -32,4 +32,29 @@ fun main() {
     println("Nama: ${student.name}")
     println("Jurusan: ${student.major}")
     println("IPK: ${student.gpa}")
+
+    println("\n=== Sistem Peminjaman Buku ===")
+
+    print("Judul Buku: ")
+    val title = input.nextLine()
+
+    print("Nama Peminjam: ")
+    val borrower = input.nextLine()
+
+    print("Lama Pinjam (hari): ")
+    var duration = input.nextInt()
+    input.nextLine()
+
+    // Validasi: tidak boleh minus
+    if (duration < 0) {
+        duration = 1
+    }
+
+    val loan = Loan(title, borrower, duration)
+
+    println("\nDetail Peminjaman:")
+    println("Buku: ${loan.bookTitle}")
+    println("Peminjam: ${loan.borrower}")
+    println("Durasi: ${loan.loanDuration} hari")
+    println("Total Denda: Rp ${loan.calculateFine()}")
 }
