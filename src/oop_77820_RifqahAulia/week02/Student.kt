@@ -1,4 +1,4 @@
-package oop_<nim>_<nama>.week02
+package oop_77820_RifqahAulia.week02
 
 class Student(
     val nim: String,
