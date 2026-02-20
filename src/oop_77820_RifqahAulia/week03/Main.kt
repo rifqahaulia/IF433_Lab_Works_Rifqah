@@ -1,10 +1,14 @@
 package oop_77820_RifqahAulia.week03
 
 fun main() {
-    val e = Employee("Budi")
 
-    e.salary = 5000000
-    e.increasePerformance()
+    val weapon = Weapon("Excalibur")
 
-    e.printStatus()
+    weapon.damage = -50     // Harus gagal
+    println("Damage sekarang: ${weapon.damage}")
+
+    weapon.damage = 9999    // Harus jadi 1000
+    println("Damage sekarang: ${weapon.damage}")
+
+    println("Tier weapon: ${weapon.tier}")
 }
