@@ -2,6 +2,7 @@ package oop_77820_RifqahAulia.week03
 
 class Employee(val name: String) {
 
+    // Salary dengan validasi
     var salary: Int = 0
         set(value) {
             if (value < 0) {
@@ -12,7 +13,7 @@ class Employee(val name: String) {
             }
         }
 
-    // Hanya bisa diakses di dalam class ini saja
+    // Private property (Encapsulation)
     private var performanceRating: Int = 3
 
     fun increasePerformance() {
@@ -23,4 +24,9 @@ class Employee(val name: String) {
     fun printStatus() {
         println("Karyawan: $name, Rating: $performanceRating")
     }
+
+    // Computed Property (Custom Getter)
+    // Pajak 10% dari salary
+    val tax: Double
+        get() = salary * 0.1
 }
