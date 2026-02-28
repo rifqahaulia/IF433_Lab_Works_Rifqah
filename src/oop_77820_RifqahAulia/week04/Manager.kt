@@ -1,5 +1,6 @@
 package oop_77820_RifqahAulia.week04
 
+//revisi
 class Manager(name: String, baseSalary: Int) : Employee(name, baseSalary) {
 
     override fun work() {
