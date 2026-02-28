@@ -1,5 +1,6 @@
 package oop_77820_RifqahAulia.week04
 
+//cekpoint6
 class ElectricCar(
     brand: String,
     numberOfDoors: Int,
