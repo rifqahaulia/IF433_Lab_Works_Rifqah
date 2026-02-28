@@ -1,5 +1,6 @@
 package oop_77820_RifqahAulia.week04
 
+//revisi
 open class Employee(val name: String, val baseSalary: Int) {
 
     open fun work() {
