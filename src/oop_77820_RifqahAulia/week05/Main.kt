@@ -39,6 +39,21 @@ fun main() {
     val metodePembayaran: List<PaymentMethod> = listOf(eWallet, creditCard)
 
     for (metode in metodePembayaran) {
+        println("-------------------------")
+        println("Metode pembayaran: ${metode::class.simpleName}")
         metode.processPayment(75000.0)
+
+        when (metode) {
+            is EWallet -> {
+                println("EWallet terdeteksi, melakukan top up otomatis...")
+                metode.topUp(50000.0)
+                println("Mencoba pembayaran ulang...")
+                metode.processPayment(75000.0)
+            }
+
+            is CreditCard -> {
+                println("CreditCard tidak perlu top up.")
+            }
+        }
     }
 }
