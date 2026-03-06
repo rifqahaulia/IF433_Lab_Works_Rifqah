@@ -24,4 +24,11 @@ fun main() {
 
         println("-------------------------")
     }
+
+    val mathHelper = MathHelper()
+
+    println("=== UJI METHOD OVERLOADING ===")
+    println("Luas persegi (sisi = 4) = ${mathHelper.hitungLuas(4)}")
+    println("Luas persegi panjang (panjang = 6, lebar = 3) = ${mathHelper.hitungLuas(6, 3)}")
+    println("Luas lingkaran (jari-jari = 7.0) = ${mathHelper.hitungLuas(7.0)}")
 }
