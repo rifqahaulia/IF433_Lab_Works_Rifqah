@@ -1,5 +1,6 @@
 package oop_77820_RifqahAulia.week08
 
+//run cekpoint 9
 fun main() {
 
     println("=== TEST SAFE CALLS & ELVIS ===")
