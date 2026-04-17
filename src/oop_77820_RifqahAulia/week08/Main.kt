@@ -1,6 +1,5 @@
 package oop_77820_RifqahAulia.week08
 
-//run cekpoint 9
 fun main() {
 
     println("=== TEST SAFE CALLS & ELVIS ===")
@@ -34,7 +33,6 @@ fun main() {
 
     for (item in mixedData) {
         val text = item as? String
-
         text?.let {
             println("Ditemukan teks: ${it.uppercase()}")
         }
@@ -44,6 +42,7 @@ fun main() {
     val safeString = someObject as? String ?: "Unknown String"
     println("Hasil cast + fallback: $safeString")
 
+
     println("\n=== TEST THE RED BUTTON (!!) ===")
     val toxicData: String? = null
 
@@ -51,5 +50,17 @@ fun main() {
         val length = toxicData!!.length
     } catch (e: NullPointerException) {
         println("CRASH (NPE)! Jangan gunakan !! secara sembarangan.")
+    }
+
+
+    val apiResponse: Map<String, String?> =
+        mapOf("status" to "200", "token" to null)
+
+    try {
+        val token = requireNotNull(apiResponse["token"]) {
+            "CRITICAL EXCEPTION: Token tidak ditemukan!"
+        }
+    } catch (e: IllegalArgumentException) {
+        println(e.message)
     }
 }
