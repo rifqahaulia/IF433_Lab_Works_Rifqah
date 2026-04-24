@@ -1,5 +1,6 @@
 package oop_77820_RifqahAulia.week09
 
+
 fun main() {
 
     val tradeHistory = listOf(
@@ -32,7 +33,11 @@ fun main() {
     println("=== CRYPTO TRADING DASHBOARD ===")
 
     println("\n--- TOP PERFORMERS ---")
-    topPerformersString.forEach {
-        println(it)
-    }
+    topPerformersString.forEach { println(it) }
+
+    println("\n--- WORST PERFORMERS ---")
+    worstPerformersString.forEach { println(it) }
+
+    println("\n--- UNIQUE PAIRS ---")
+    println(uniquePairs)
 }
