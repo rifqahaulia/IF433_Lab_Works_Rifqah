@@ -1,5 +1,6 @@
 package oop_77820_RifqahAulia.week09
 
+
 fun main() {
 
     val tradeHistory = listOf(
@@ -13,4 +14,5 @@ fun main() {
 
     val closedTrades = tradeHistory.filter { it.status == "CLOSED" }
     val winningTrades = closedTrades.filter { it.roe > 0 }
+    val losingTrades = closedTrades.filter { it.roe <= 0 }
 }
