@@ -27,7 +27,12 @@ fun main() {
             "LOSS [${it.pair} - ${it.position}]: ${it.roe}% ROE (Lev: ${it.leverage}x)"
         }
 
-    val uniquePairs = tradeHistory
-        .map { it.pair }
-        .toSet()
+    val uniquePairs = tradeHistory.map { it.pair }.toSet()
+
+    println("=== CRYPTO TRADING DASHBOARD ===")
+
+    println("\n--- TOP PERFORMERS ---")
+    topPerformersString.forEach {
+        println(it)
+    }
 }
