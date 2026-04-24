@@ -1,6 +1,6 @@
 package oop_77820_RifqahAulia.week09
 
-
+// FINAL TEST - pipeline verified
 fun main() {
 
     val tradeHistory = listOf(
