@@ -35,4 +35,18 @@ fun main() {
 
         println("User Detail -> Nama: $name, Umur: $age")
     }
+
+    println("\n=== COMBINE APPLY & ALSO ===")
+
+    val admin = User().apply {
+
+        name = "Administrator"
+        age = 30
+
+    }.also {
+
+        println("User berhasil dibuat: $it")
+    }
+
+    println(admin)
 }
