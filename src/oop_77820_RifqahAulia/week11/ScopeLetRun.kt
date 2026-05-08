@@ -21,7 +21,7 @@ fun main() {
 
         println("Memproses kata: $this")
 
-        length * 2
+        this.length * 2
     }
 
     println("Hasil kalkulasi run: $result")
