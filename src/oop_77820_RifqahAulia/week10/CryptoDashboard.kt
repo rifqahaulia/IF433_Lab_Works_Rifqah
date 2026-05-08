@@ -2,6 +2,8 @@ package oop_77820_RifqahAulia.week10
 
 fun main() {
 
+    println("=== CRYPTO DASHBOARD ===")
+
     val coinRepo = WalletRepository<Coin>()
 
     coinRepo.add(Coin("BTC", 1.5))
@@ -20,8 +22,15 @@ fun main() {
         println("Coin: ${it.name}, Balance: ${it.balance}")
     }
 
+    println("\n=== TRANSACTION HISTORY ===")
+
     val txRepo = WalletRepository<Transaction>()
 
     txRepo.add(Transaction("TX001", 50000.0))
     txRepo.add(Transaction("TX002", 120000.0))
+
+    txRepo.getAll().forEach {
+
+        println("Transaction ID: ${it.id}, Amount: ${it.amount}")
+    }
 }
