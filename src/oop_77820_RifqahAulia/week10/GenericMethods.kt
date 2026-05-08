@@ -1,0 +1,6 @@
+package oop_77820_RifqahAulia.week10
+
+fun <T> printData(data: T) {
+
+    println("Data yang diterima: $data")
+}
