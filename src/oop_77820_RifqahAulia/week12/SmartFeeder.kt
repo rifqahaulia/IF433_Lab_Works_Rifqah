@@ -1,5 +1,5 @@
 package oop_77820_RifqahAulia.week12
-
+//ngerun codingan
 fun dispenseKibble(
     requestedGram: Int,
     availableGram: Int,
