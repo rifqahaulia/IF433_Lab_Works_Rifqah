@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ffd400ad-c6f2-4aaf-a968-b946854633bf" name="Changes" comment="week14: setup project structure">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oop_77820_RifqahAulia/week14/run.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop_77820_RifqahAulia/week14/SrpViolation.kt" afterDir="false" />
+    <list default="true" id="ffd400ad-c6f2-4aaf-a968-b946854633bf" name="Changes" comment="week14: create DiscountStrategy interface and implementations">
+      <change beforePath="$PROJECT_DIR$/src/oop_77820_RifqahAulia/week14/OcpRefactored.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop_77820_RifqahAulia/week14/OcpRefactored.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,11 +83,56 @@
       <option name="project" value="LOCAL" />
       <updated>1780578001287</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="week13: implement basic writeText function">
+      <option name="closed" value="true" />
+      <created>1780578303502</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1780578303502</updated>
+    </task>
+    <task id="LOCAL-00004" summary="week14: extract UserValidator and UserRepository">
+      <option name="closed" value="true" />
+      <created>1780578351091</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1780578351091</updated>
+    </task>
+    <task id="LOCAL-00005" summary="week14: extract EmailService to fix SRP">
+      <option name="closed" value="true" />
+      <created>1780578385571</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1780578385571</updated>
+    </task>
+    <task id="LOCAL-00006" summary="week14: create bad DiscountCalculator (OCP violation)">
+      <option name="closed" value="true" />
+      <created>1780578430212</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1780578430212</updated>
+    </task>
+    <task id="LOCAL-00007" summary="week14: create DiscountStrategy interface and implementations">
+      <option name="closed" value="true" />
+      <created>1780578527563</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1780578527563</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="week14: setup project structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="week14: setup project structure" />
+    <MESSAGE value="week13: implement basic writeText function" />
+    <MESSAGE value="week14: extract UserValidator and UserRepository" />
+    <MESSAGE value="week14: extract EmailService to fix SRP" />
+    <MESSAGE value="week14: create bad DiscountCalculator (OCP violation)" />
+    <MESSAGE value="week14: create DiscountStrategy interface and implementations" />
+    <option name="LAST_COMMIT_MESSAGE" value="week14: create DiscountStrategy interface and implementations" />
   </component>
 </project>
