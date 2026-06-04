@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ffd400ad-c6f2-4aaf-a968-b946854633bf" name="Changes" comment="week14: create DiscountStrategy interface and implementations">
-      <change beforePath="$PROJECT_DIR$/src/oop_77820_RifqahAulia/week14/OcpRefactored.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/oop_77820_RifqahAulia/week14/OcpRefactored.kt" afterDir="false" />
-    </list>
+    <list default="true" id="ffd400ad-c6f2-4aaf-a968-b946854633bf" name="Changes" comment="week14: refactor SimplePrinter to implement only Printable" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,7 +121,71 @@
       <option name="project" value="LOCAL" />
       <updated>1780578527563</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="week14: refactor DiscountCalculator to use strategy">
+      <option name="closed" value="true" />
+      <created>1780578574073</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1780578574073</updated>
+    </task>
+    <task id="LOCAL-00009" summary="week14: add SeniorDiscount without modifying calculator">
+      <option name="closed" value="true" />
+      <created>1780578613635</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1780578613635</updated>
+    </task>
+    <task id="LOCAL-00010" summary="week14: create bad Square extending Rectangle (LSP violation)">
+      <option name="closed" value="true" />
+      <created>1780578665396</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1780578665396</updated>
+    </task>
+    <task id="LOCAL-00011" summary="week14: create Shape interface">
+      <option name="closed" value="true" />
+      <created>1780578705704</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1780578705704</updated>
+    </task>
+    <task id="LOCAL-00012" summary="week14: implement Shape independently to fix LSP">
+      <option name="closed" value="true" />
+      <created>1780578737077</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1780578737077</updated>
+    </task>
+    <task id="LOCAL-00013" summary="week14: create fat MultifunctionDevice (ISP violation)">
+      <option name="closed" value="true" />
+      <created>1780578778379</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1780578778380</updated>
+    </task>
+    <task id="LOCAL-00014" summary="week14: segregate device interfaces">
+      <option name="closed" value="true" />
+      <created>1780578833278</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1780578833278</updated>
+    </task>
+    <task id="LOCAL-00015" summary="week14: refactor SimplePrinter to implement only Printable">
+      <option name="closed" value="true" />
+      <created>1780578860568</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1780578860568</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -133,6 +195,14 @@
     <MESSAGE value="week14: extract EmailService to fix SRP" />
     <MESSAGE value="week14: create bad DiscountCalculator (OCP violation)" />
     <MESSAGE value="week14: create DiscountStrategy interface and implementations" />
-    <option name="LAST_COMMIT_MESSAGE" value="week14: create DiscountStrategy interface and implementations" />
+    <MESSAGE value="week14: refactor DiscountCalculator to use strategy" />
+    <MESSAGE value="week14: add SeniorDiscount without modifying calculator" />
+    <MESSAGE value="week14: create bad Square extending Rectangle (LSP violation)" />
+    <MESSAGE value="week14: create Shape interface" />
+    <MESSAGE value="week14: implement Shape independently to fix LSP" />
+    <MESSAGE value="week14: create fat MultifunctionDevice (ISP violation)" />
+    <MESSAGE value="week14: segregate device interfaces" />
+    <MESSAGE value="week14: refactor SimplePrinter to implement only Printable" />
+    <option name="LAST_COMMIT_MESSAGE" value="week14: refactor SimplePrinter to implement only Printable" />
   </component>
 </project>
